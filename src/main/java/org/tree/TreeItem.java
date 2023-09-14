@@ -6,9 +6,9 @@ public class TreeItem {
     private TreeItemInfo item;
     private List<TreeItemInfo> children;
 
-    public TreeItem(TreeItemInfo item, List<TreeItemInfo> childs) {
+    public TreeItem(TreeItemInfo item, List<TreeItemInfo> children) {
         this.item = item;
-        this.children = childs;
+        this.children = children;
     }
 
     public TreeItemInfo getItem() {
