@@ -5,15 +5,19 @@
 */
 package practice.task14;
 
+import java.util.Arrays;
+
 public class StringUtilsCamel {
     private StringUtilsCamel() {}
 
     public static String toCamelCase(String input) {
         StringBuilder builder = new StringBuilder();
-        String[] words = input.split(" ");
+        String str = input.replaceAll("[^A-Za-z]+", " ").trim();
+        String[] words = str.split(" ");
 
         for(int i = 0; i < words.length; i++) {
             String word = words[i];
+
             if(i == 0) {
                 word = word.toLowerCase();
             } else {
@@ -21,7 +25,6 @@ public class StringUtilsCamel {
             }
 
             builder.append(word);
-            System.out.println(builder);
         }
 
         return builder.toString();
