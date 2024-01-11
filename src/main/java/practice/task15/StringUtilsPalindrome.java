@@ -6,22 +6,20 @@
 */
 package practice.task15;
 
-import java.util.Arrays;
 
 public class StringUtilsPalindrome {
     private StringUtilsPalindrome() {
     }
 
-    private static boolean isPalindrome(String input) {
-        char[] inputStr = new char[input.length()];
+    public static boolean isPalindrome(String input) {
+        String str = input.replaceAll("[^a-zA-Zа-яА-Я]+", "");
 
-        for (int i = 0; i < input.length(); i++) {
-            if (Character.isLetter(input.charAt(i))) {
-                inputStr[i] = input.charAt(i);
-            }
+        if(str.isEmpty()) {
+            return false;
         }
 
-        System.out.println(Arrays.toString(inputStr));
-        return false;
+        StringBuilder builder = new StringBuilder(str).reverse();
+
+        return str.equalsIgnoreCase(builder.toString());
     }
 }
