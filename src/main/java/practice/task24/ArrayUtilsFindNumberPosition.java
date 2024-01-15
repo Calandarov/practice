@@ -5,22 +5,31 @@
 */
 package practice.task24;
 
+
 public class ArrayUtilsFindNumberPosition {
     private ArrayUtilsFindNumberPosition() {}
 
     public static int[] findNumberPosition(int[][] input, int number) {
-        int[] result = null;
+        boolean match = false;
+        int raw = 0;
+        int col = 0;
 
         for(int i = 0; i < input.length; i++) {
             int innerLength = input[i].length;
 
             for(int j = 0; j < innerLength; j++) {
                 if(input[i][j] == number) {
-                    result = new int[]{i, j};
+                    match = true;
+                    raw = i;
+                    col = j;
                 }
             }
         }
 
-        return result;
+        if(match) {
+            return new int[] {raw, col};
+        }
+
+        return new int[0];
     }
 }
