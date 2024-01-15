@@ -8,7 +8,6 @@ import java.util.*;
 public class CollectionUtilsUniqueValues {
     private CollectionUtilsUniqueValues() {}
     public static <T> Collection<T> removeDuplicates(Collection<T> inputCollection) {
-
-        return List.of();
+        return new HashSet<>(inputCollection);
     }
 }
