@@ -5,7 +5,6 @@
 package practice.task25;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ArrayUtilsRemoveElement {
@@ -19,10 +18,9 @@ public class ArrayUtilsRemoveElement {
             }
         }
 
-        System.out.println(list);
         int[] resultArr = new int[list.size()];
-        for(int i : list) {
-            resultArr[i] = i;
+        for(int i = 0; i < resultArr.length; i++) {
+            resultArr[i] = list.get(i);
         }
 
         return resultArr;
