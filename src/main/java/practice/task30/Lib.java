@@ -2,10 +2,12 @@ package practice.task30;
 
 public class Lib {
     private final int MAX_BOOKS = 5;
-    private Book[] lib;
+    private Book[] lib = new Book[MAX_BOOKS];
 
     public Lib() {
-        lib = new Book[MAX_BOOKS];
+        for(int i = 0; i < lib.length; i++) {
+            lib[i] = new Book();
+        }
     }
 
     public int getMAX_BOOKS() {
@@ -19,7 +21,7 @@ public class Lib {
     public void addBook(Book book) {
         Book[] newLib = new Book[lib.length + 1];
 
-        for(int i = 0; i < lib.length - 1; i++) {
+        for(int i = 0; i < lib.length; i++) {
             newLib[i] = lib[i];
         }
 
