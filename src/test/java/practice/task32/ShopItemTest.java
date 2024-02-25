@@ -5,8 +5,8 @@ import org.junit.Test;
 public class ShopItemTest {
     @Test
     public void createObject() {
-        ShopItem shopItem1 = new ShopItem(1, "Test1", 2, 3, 4, 5, 6);
-        ShopItem shopItem2 = new ShopItem(3, "Test2", 2, 3, 4, 5, 6);
+        ShopItem shopItem1 = new ShopItem("ShopItem1", 1, 2, 3, 4, 5);
+        ShopItem shopItem2 = new ShopItem("ShopItem2", 6, 7, 8, 9, 10);
 
         System.out.println(ShopItem.getAmountShopItem());
     }

@@ -8,16 +8,15 @@ package practice.task32;
 
 public class ShopItem {
     public static int amountShopItem = 0;
-    private int id;
-    private String title;
-    private int width;
-    private int height;
-    private int length;
-    private int mass;
-    private int price;
+    private int id = 0;
+    private String title = null;
+    private int width = 0;
+    private int height = 0;
+    private int length = 0;
+    private int mass = 0;
+    private int price = 0;
 
-    public ShopItem(int id, String title, int width, int height, int length, int mass, int price) {
-        this.id = id;
+    public ShopItem(String title, int width, int height, int length, int mass, int price) {
         this.title = title;
         this.width = width;
         this.height = height;
@@ -25,6 +24,7 @@ public class ShopItem {
         this.mass = mass;
         this.price = price;
 
+        id++;
         amountShopItem++;
     }
 
@@ -38,10 +38,6 @@ public class ShopItem {
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getTitle() {
