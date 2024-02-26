@@ -12,5 +12,7 @@
 package practice.task38.subtask1;
 
 public interface PersonInterface {
-
+    String getInfo();
+    String getStatus();
+    String getFIO();
 }
