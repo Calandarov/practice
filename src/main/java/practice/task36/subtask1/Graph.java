@@ -20,6 +20,6 @@ public class Graph {
     }
 
     protected void draw() {
-        System.out.println("Рисуется график " + title + " с значениями " + Arrays.toString(graphValues));
+        System.out.println("Рисуется график Graph со значениями " + Arrays.toString(graphValues));
     }
 }
