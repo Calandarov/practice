@@ -7,12 +7,6 @@ public class ConditionalUtilsTriangleSides {
     private ConditionalUtilsTriangleSides() {}
 
     public static boolean isTriangleSides(int aSide, int bSide, int cSide) {
-        boolean result = false;
-
-        if(aSide < bSide + cSide && bSide < aSide + cSide && cSide < aSide + bSide) {
-            result = true;
-        }
-
-        return result;
+        return aSide < bSide + cSide && bSide < aSide + cSide && cSide < aSide + bSide;
     }
 }

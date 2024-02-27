@@ -8,6 +8,7 @@ public class ConditionalUtilsCountInner {
     private ConditionalUtilsCountInner() {}
 
     public static int countInnerNumber(int base, int checkNumber) {
+        // TODO: посмотреть еще раз
         String[] numbers = new String[] {String.valueOf(base).substring(0, 2),
                                          String.valueOf(base).substring(1, 3),
                                          String.valueOf(base).substring(2)};
