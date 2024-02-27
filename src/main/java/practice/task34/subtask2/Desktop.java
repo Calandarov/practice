@@ -1,10 +1,10 @@
 package practice.task34.subtask2;
 
 public class Desktop extends DeviceScreen {
-    private String position;
-    private int screenSize;
-    private boolean abilityToChangeSize;
-    private boolean fullScreen;
+    String position;
+    int screenSize;
+    boolean abilityToChangeSize;
+    boolean fullScreen;
 
     public Desktop(String title, String font, boolean haveFrame, String position, int screenSize, boolean abilityToChangeSize, boolean fullScreen) {
         super(title, font, haveFrame);

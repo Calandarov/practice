@@ -18,7 +18,6 @@ public class CollectionUtilsCount {
             map.put(item, value);
         }
 
-//        System.out.println(map);
         return map;
     }
 }

@@ -5,7 +5,6 @@
 */
 package practice.task26;
 
-import java.util.Arrays;
 
 public class ArrayUtilsShiftElements {
     private ArrayUtilsShiftElements() {}
