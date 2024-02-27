@@ -7,8 +7,8 @@ public class PropertiesTest {
     public void createObject() {
         Properties properties = new Properties(10, "straight", 255, 255, 255);
 
-        System.out.println(properties.lineWidth);
-        System.out.println(properties.lineType);
-        System.out.println(properties.color);
+        System.out.println(properties.getLineWidth());
+        System.out.println(properties.getLineType());
+        System.out.println(properties.getColor());
     }
 }

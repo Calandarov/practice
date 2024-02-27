@@ -6,14 +6,38 @@
 package practice.task33.subtask1;
 
 public class Properties {
-    int lineWidth;
-    String lineType;
-    Color color;
+    private int lineWidth;
+    private String lineType;
+    private Color color;
 
     public Properties(int lineWidth, String lineType, int red, int green, int blue) {
         this.lineWidth = lineWidth;
         this.lineType = lineType;
         color = new Color(red, green, blue);
+    }
+
+    public int getLineWidth() {
+        return lineWidth;
+    }
+
+    public void setLineWidth(int lineWidth) {
+        this.lineWidth = lineWidth;
+    }
+
+    public String getLineType() {
+        return lineType;
+    }
+
+    public void setLineType(String lineType) {
+        this.lineType = lineType;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
     }
 
     class Color {

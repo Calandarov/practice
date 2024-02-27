@@ -6,11 +6,11 @@
 package practice.task33.subtask2;
 
 public class MusicalInstrument {
-    String title;
-    int type;
-    Dimensions dimensions;
-    int price;
-    int year;
+    private String title;
+    private int type;
+    private Dimensions dimensions;
+    private int price;
+    private int year;
 
     public MusicalInstrument(String title, int type, int width, int height, int depth, int price, int year) {
         this.title = title;
@@ -20,6 +20,46 @@ public class MusicalInstrument {
         this.year = year;
 
         Stat.amountInstrument++;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public Dimensions getDimensions() {
+        return dimensions;
+    }
+
+    public void setDimensions(Dimensions dimensions) {
+        this.dimensions = dimensions;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 
     class Dimensions {

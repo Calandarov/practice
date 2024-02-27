@@ -10,7 +10,7 @@ public class DeviceScreenTest {
         Smartphone smartphone = new Smartphone("Smartphone", "smartphoneSize", false);
 
         System.out.println(desktop.title + " " + desktop.getScreenSize());
-        System.out.println(pad.title + " " + pad.position);
+        System.out.println(pad.title + " " + pad.getPosition());
         System.out.println(smartphone.title + " " + smartphone.font);
     }
 }

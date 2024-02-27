@@ -1,17 +1,37 @@
 package practice.task38.subtask1;
 
 public class Clients implements PersonInterface {
-    public String FIO;
-    public String status;
-    public int yearOfBirth;
-    public String phoneNumber;
-    public String address;
+    private String FIO;
+    private String status;
+    private int yearOfBirth;
+    private String phoneNumber;
+    private String address;
 
     public Clients(String FIO, String status, int yearOfBirth, String phoneNumber, String address) {
         this.FIO = FIO;
         this.status = status;
         this.yearOfBirth = yearOfBirth;
         this.phoneNumber = phoneNumber;
+        this.address = address;
+    }
+
+    public void setFIO(String FIO) {
+        this.FIO = FIO;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setYearOfBirth(int yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setAddress(String address) {
         this.address = address;
     }
 

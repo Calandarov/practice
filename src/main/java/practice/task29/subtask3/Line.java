@@ -5,10 +5,11 @@
 package practice.task29.subtask3;
 
 public class Line {
-    int startPointX;
-    int startPointY;
-    int endPointX;
-    int endPointY;
+    // TODO: посмотреть еще, не понял условие
+    private int startPointX;
+    private int startPointY;
+    private int endPointX;
+    private int endPointY;
 
     public Line(int startPointX, int startPointY, int endPointX, int endPointY) {
         this.startPointX = startPointX;
@@ -17,5 +18,35 @@ public class Line {
         this.endPointY = endPointY;
     }
 
-    // TODO: посмотреть еще, не понял условие
+    public int getStartPointX() {
+        return startPointX;
+    }
+
+    public void setStartPointX(int startPointX) {
+        this.startPointX = startPointX;
+    }
+
+    public int getStartPointY() {
+        return startPointY;
+    }
+
+    public void setStartPointY(int startPointY) {
+        this.startPointY = startPointY;
+    }
+
+    public int getEndPointX() {
+        return endPointX;
+    }
+
+    public void setEndPointX(int endPointX) {
+        this.endPointX = endPointX;
+    }
+
+    public int getEndPointY() {
+        return endPointY;
+    }
+
+    public void setEndPointY(int endPointY) {
+        this.endPointY = endPointY;
+    }
 }

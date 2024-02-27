@@ -8,10 +8,10 @@
 package practice.task29.subtask1;
 
 public class Rect {
-    int topLeftCornerX;
-    int topLeftCornerY;
-    int botRightCornerX;
-    int botRightCornerY;
+    private int topLeftCornerX;
+    private int topLeftCornerY;
+    private int botRightCornerX;
+    private int botRightCornerY;
 
     public Rect() {
         topLeftCornerX = 0;
@@ -33,6 +33,38 @@ public class Rect {
 //        this.botRightCornerX = width;
 //        this.botRightCornerY = height;
 //    }
+
+    public int getTopLeftCornerX() {
+        return topLeftCornerX;
+    }
+
+    public void setTopLeftCornerX(int topLeftCornerX) {
+        this.topLeftCornerX = topLeftCornerX;
+    }
+
+    public int getTopLeftCornerY() {
+        return topLeftCornerY;
+    }
+
+    public void setTopLeftCornerY(int topLeftCornerY) {
+        this.topLeftCornerY = topLeftCornerY;
+    }
+
+    public int getBotRightCornerX() {
+        return botRightCornerX;
+    }
+
+    public void setBotRightCornerX(int botRightCornerX) {
+        this.botRightCornerX = botRightCornerX;
+    }
+
+    public int getBotRightCornerY() {
+        return botRightCornerY;
+    }
+
+    public void setBotRightCornerY(int botRightCornerY) {
+        this.botRightCornerY = botRightCornerY;
+    }
 
     public String getCoordinates() {
         return "(" +

@@ -10,9 +10,9 @@ public class FurnitureTest {
         Shelf shelf = new Shelf("Shelf", 20, 20, 10, 40, 5, 5);
         Table table = new Table("Table", 40, 35, 20, 1000, 4, 35);
 
-        System.out.println(chair.title + " " + chair.numberOfLegs);
-        System.out.println(closet.title + " " + closet.handleMaterial);
-        System.out.println(shelf.title + " " + shelf.numberOfSegments);
-        System.out.println(table.title + " " + table.area);
+        System.out.println(chair.title + " " + chair.getNumberOfLegs());
+        System.out.println(closet.title + " " + closet.getHandleMaterial());
+        System.out.println(shelf.title + " " + shelf.getNumberOfSegments());
+        System.out.println(table.title + " " + table.getArea());
     }
 }

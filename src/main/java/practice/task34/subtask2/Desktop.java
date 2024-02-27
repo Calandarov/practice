@@ -1,10 +1,10 @@
 package practice.task34.subtask2;
 
 public class Desktop extends DeviceScreen {
-    String position;
-    int screenSize;
-    boolean abilityToChangeSize;
-    boolean fullScreen;
+    private String position;
+    private int screenSize;
+    private boolean abilityToChangeSize;
+    private boolean fullScreen;
 
     public Desktop(String title, String font, boolean haveFrame, String position, int screenSize, boolean abilityToChangeSize, boolean fullScreen) {
         super(title, font, haveFrame);
@@ -30,7 +30,7 @@ public class Desktop extends DeviceScreen {
         this.screenSize = screenSize;
     }
 
-    public boolean isAbilityToChangeSize() {
+    public boolean getAbilityToChangeSize() {
         return abilityToChangeSize;
     }
 
@@ -38,7 +38,7 @@ public class Desktop extends DeviceScreen {
         this.abilityToChangeSize = abilityToChangeSize;
     }
 
-    public boolean isFullScreen() {
+    public boolean getFullScreen() {
         return fullScreen;
     }
 

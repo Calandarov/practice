@@ -9,27 +9,11 @@
 package practice.task37.subtask1;
 
 public abstract class Geom {
-    private int width;
-    private String color;
+    protected int width;
+    protected String color;
 
     public Geom(int width, String color) {
         this.width = width;
-        this.color = color;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
         this.color = color;
     }
 
