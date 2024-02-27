@@ -4,7 +4,7 @@
 */
 package practice.task28;
 
-import java.util.Arrays;
+
 import java.util.Random;
 
 public class ArrayUtilsTwoDigitNumbers {
@@ -12,9 +12,6 @@ public class ArrayUtilsTwoDigitNumbers {
 
     public static int[] fillArrayByTwoDigitNumbers(int[] inputArray) {
         Random random = new Random();
-
-        // TODO Добавить проверку на длину массива (если есть значения, замена элементов = удаление?)
-//        if(inputArray.length != 0) {}
 
         for(int i = 0; i < inputArray.length; i++) {
             int randomNum = random.nextInt(100);
