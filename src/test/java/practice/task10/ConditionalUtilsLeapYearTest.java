@@ -8,7 +8,10 @@ public class ConditionalUtilsLeapYearTest {
     public void isLeapYear() {
         Assert.assertTrue(ConditionalUtilsLeapYear.isLeapYear(2000));
         Assert.assertTrue(ConditionalUtilsLeapYear.isLeapYear(2024));
+    }
 
+    @Test
+    public void isNotLeapYear() {
         Assert.assertFalse(ConditionalUtilsLeapYear.isLeapYear(1999));
         Assert.assertFalse(ConditionalUtilsLeapYear.isLeapYear(2023));
     }

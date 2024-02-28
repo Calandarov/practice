@@ -21,7 +21,6 @@ public class MathUtilFactorial {
             result *= i;
         }
 
-        // TODO: Если получаемое в результате число не помещается в памяти, метод должен вернуть 0 (?)
         if(result > Long.MAX_VALUE) {
             return 0;
         }

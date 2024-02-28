@@ -5,10 +5,16 @@ import org.junit.Test;
 
 public class BracketUtilTest {
     @Test
-    public void isCorrectBrackets() {
-        Assert.assertTrue(BracketUtil.isCorrectBrackets("{}", '{', '}'));
-        Assert.assertTrue(BracketUtil.isCorrectBrackets("{{{}}}", '{', '}'));
+    public void checkEqualNumberOfBrackets() {
+        Assert.assertTrue(BracketUtil.checkNumberOfBrackets("[]", '[', ']'));
+        Assert.assertTrue(BracketUtil.checkNumberOfBrackets("(())", '(', ')'));
+        Assert.assertTrue(BracketUtil.checkNumberOfBrackets("{{{}}}", '{', '}'));
+    }
 
-        Assert.assertFalse(BracketUtil.isCorrectBrackets("{{{}}", '{', '}'));
+    @Test
+    public void checkNotEqualNumberOfBrackets() {
+        Assert.assertFalse(BracketUtil.checkNumberOfBrackets("[]]", '[', ']'));
+        Assert.assertFalse(BracketUtil.checkNumberOfBrackets("(", '(', ')'));
+        Assert.assertFalse(BracketUtil.checkNumberOfBrackets("}", '{', '}'));
     }
 }

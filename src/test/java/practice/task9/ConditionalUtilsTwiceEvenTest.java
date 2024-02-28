@@ -5,12 +5,20 @@ import org.junit.Test;
 
 public class ConditionalUtilsTwiceEvenTest {
     @Test
-    public void isDoublePrime() {
-        Assert.assertTrue(ConditionalUtilsTwiceEven.isDoublePrime(123));
-        Assert.assertTrue(ConditionalUtilsTwiceEven.isDoublePrime(222));
+    public void isTwiceEven() {
+        Assert.assertTrue(ConditionalUtilsTwiceEven.isTwiceEven(123));
+        Assert.assertTrue(ConditionalUtilsTwiceEven.isTwiceEven(222));
+    }
 
-        Assert.assertFalse(ConditionalUtilsTwiceEven.isDoublePrime(22));
-        Assert.assertFalse(ConditionalUtilsTwiceEven.isDoublePrime(2222));
-        Assert.assertFalse(ConditionalUtilsTwiceEven.isDoublePrime(555));
+    @Test
+    public void isNotTwiceEven() {
+        Assert.assertFalse(ConditionalUtilsTwiceEven.isTwiceEven(999));
+        Assert.assertFalse(ConditionalUtilsTwiceEven.isTwiceEven(555));
+    }
+
+    @Test
+    public void numberLengthIsNotEqualTwo() {
+        Assert.assertFalse(ConditionalUtilsTwiceEven.isTwiceEven(22));
+        Assert.assertFalse(ConditionalUtilsTwiceEven.isTwiceEven(2222));
     }
 }

@@ -8,7 +8,7 @@ package practice.task3;
 
 public class BracketUtil {
     private BracketUtil() {}
-    public static boolean isCorrectBrackets(String input, char bracketOpenSymbol, char bracketCloseSymbol) {
+    public static boolean checkNumberOfBrackets(String input, char bracketOpenSymbol, char bracketCloseSymbol) {
         int openSymbolCounter = 0;
         int closeSymbolCounter = 0;
 

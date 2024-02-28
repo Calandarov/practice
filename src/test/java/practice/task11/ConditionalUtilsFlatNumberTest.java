@@ -5,13 +5,20 @@ import org.junit.Test;
 
 public class ConditionalUtilsFlatNumberTest {
     @Test
-    public void isDescendingNumber() {
-        Assert.assertTrue(ConditionalUtilsFlatNumber.isDescendingNumber(111));
-        Assert.assertTrue(ConditionalUtilsFlatNumber.isDescendingNumber(555));
-        Assert.assertTrue(ConditionalUtilsFlatNumber.isDescendingNumber(999));
+    public void isFlatNumber() {
+        Assert.assertTrue(ConditionalUtilsFlatNumber.isFlatNumber(111));
+        Assert.assertTrue(ConditionalUtilsFlatNumber.isFlatNumber(999));
+    }
 
-        Assert.assertFalse(ConditionalUtilsFlatNumber.isDescendingNumber(1));
-        Assert.assertFalse(ConditionalUtilsFlatNumber.isDescendingNumber(1111));
-        Assert.assertFalse(ConditionalUtilsFlatNumber.isDescendingNumber(110));
+    @Test
+    public void isNotFlatNumber() {
+        Assert.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(110));
+        Assert.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(123));
+    }
+
+    @Test
+    public void numberLengthIsNotEqualThree() {
+        Assert.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(1));
+        Assert.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(1111));
     }
 }

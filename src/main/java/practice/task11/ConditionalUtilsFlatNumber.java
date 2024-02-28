@@ -8,7 +8,7 @@ package practice.task11;
 public class ConditionalUtilsFlatNumber {
     private ConditionalUtilsFlatNumber() {}
 
-    public static boolean isDescendingNumber(int inputNumber) {
+    public static boolean isFlatNumber(int inputNumber) {
         String number = String.valueOf(inputNumber);
 
         if(number.length() != 3) {

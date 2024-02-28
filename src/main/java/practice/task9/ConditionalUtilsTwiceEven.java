@@ -8,7 +8,7 @@ package practice.task9;
 public class ConditionalUtilsTwiceEven {
     private ConditionalUtilsTwiceEven() {}
 
-    public static boolean isDoublePrime(int inputNumber) {
+    public static boolean isTwiceEven(int inputNumber) {
         String number = String.valueOf(inputNumber);
 
         if(number.length() != 3) {
