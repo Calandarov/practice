@@ -1,7 +1,7 @@
 package practice.task25;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class ArrayUtilsRemoveElementTest {
     @Test
@@ -10,6 +10,6 @@ public class ArrayUtilsRemoveElementTest {
         int[] actualArr = ArrayUtilsRemoveElement.removeElement(nums, 1);
         int[] expectedArr = new int[] {2, 3};
 
-        Assert.assertArrayEquals(expectedArr, actualArr);
+        Assertions.assertArrayEquals(expectedArr, actualArr);
     }
 }

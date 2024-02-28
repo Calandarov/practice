@@ -1,20 +1,20 @@
 package practice.task3;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class BracketUtilTest {
     @Test
     public void checkEqualNumberOfBrackets() {
-        Assert.assertTrue(BracketUtil.checkNumberOfBrackets("[]", '[', ']'));
-        Assert.assertTrue(BracketUtil.checkNumberOfBrackets("(())", '(', ')'));
-        Assert.assertTrue(BracketUtil.checkNumberOfBrackets("{{{}}}", '{', '}'));
+        Assertions.assertTrue(BracketUtil.checkNumberOfBrackets("[]", '[', ']'));
+        Assertions.assertTrue(BracketUtil.checkNumberOfBrackets("(())", '(', ')'));
+        Assertions.assertTrue(BracketUtil.checkNumberOfBrackets("{{{}}}", '{', '}'));
     }
 
     @Test
     public void checkNotEqualNumberOfBrackets() {
-        Assert.assertFalse(BracketUtil.checkNumberOfBrackets("[]]", '[', ']'));
-        Assert.assertFalse(BracketUtil.checkNumberOfBrackets("(", '(', ')'));
-        Assert.assertFalse(BracketUtil.checkNumberOfBrackets("}", '{', '}'));
+        Assertions.assertFalse(BracketUtil.checkNumberOfBrackets("[]]", '[', ']'));
+        Assertions.assertFalse(BracketUtil.checkNumberOfBrackets("(", '(', ')'));
+        Assertions.assertFalse(BracketUtil.checkNumberOfBrackets("}", '{', '}'));
     }
 }

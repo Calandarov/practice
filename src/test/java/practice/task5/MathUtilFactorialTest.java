@@ -1,15 +1,15 @@
 package practice.task5;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class MathUtilFactorialTest {
     @Test
     public void getFactorial() {
-        Assert.assertEquals(6, MathUtilFactorial.getFactorial((byte) 3));
-        Assert.assertEquals(120, MathUtilFactorial.getFactorial((byte) 5));
-        Assert.assertEquals(1, MathUtilFactorial.getFactorial((byte) 0));
-        Assert.assertEquals(0, MathUtilFactorial.getFactorial((byte) 1000));
-        Assert.assertEquals(0, MathUtilFactorial.getFactorial((byte) -3));
+        Assertions.assertEquals(6, MathUtilFactorial.getFactorial((byte) 3));
+        Assertions.assertEquals(120, MathUtilFactorial.getFactorial((byte) 5));
+        Assertions.assertEquals(1, MathUtilFactorial.getFactorial((byte) 0));
+        Assertions.assertEquals(0, MathUtilFactorial.getFactorial((byte) 1000));
+        Assertions.assertEquals(0, MathUtilFactorial.getFactorial((byte) -3));
     }
 }

@@ -1,7 +1,7 @@
 package practice.task36.subtask2;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 import java.util.ArrayList;
 
@@ -13,9 +13,9 @@ public class LibTest {
 
     @Test
     public void addBook() {
-        Assert.assertTrue(lib.addBook(book1));
-        Assert.assertTrue(lib.addBook(book2));
-        Assert.assertEquals(2, lib.getBooks().size());
+        Assertions.assertTrue(lib.addBook(book1));
+        Assertions.assertTrue(lib.addBook(book2));
+        Assertions.assertEquals(2, lib.getBooks().size());
     }
 
     @Test
@@ -23,8 +23,8 @@ public class LibTest {
         lib.addBook(book1);
         lib.addBook(book2);
 
-        Assert.assertTrue(lib.deleteBook(book1));
-        Assert.assertEquals(1, lib.getBooks().size());
+        Assertions.assertTrue(lib.deleteBook(book1));
+        Assertions.assertEquals(1, lib.getBooks().size());
     }
 
     // TODO: переделать
@@ -34,7 +34,7 @@ public class LibTest {
         lib.addBook(book2);
 
         String expectedBooks = "[title='Book1', author='Author1', year=2023, price=1000, title='Book2', author='Author2', year=2024, price=1500]";
-        Assert.assertEquals(expectedBooks, lib.printBooks());
+        Assertions.assertEquals(expectedBooks, lib.printBooks());
     }
 
     // TODO: переделать
@@ -46,9 +46,9 @@ public class LibTest {
 
         ArrayList<Book> actualBooks = lib.findBookByAuthor("Author1");
 
-        Assert.assertEquals(2, actualBooks.size());
+        Assertions.assertEquals(2, actualBooks.size());
         for(Book book : actualBooks) {
-            Assert.assertEquals("Author1", book.getAuthor());
+            Assertions.assertEquals("Author1", book.getAuthor());
         }
     }
 
@@ -61,9 +61,9 @@ public class LibTest {
 
         ArrayList<Book> actualBooks = lib.findBookByYear(2024);
 
-        Assert.assertEquals(2, actualBooks.size());
+        Assertions.assertEquals(2, actualBooks.size());
         for(Book book : actualBooks) {
-            Assert.assertEquals(2024, book.getYear());
+            Assertions.assertEquals(2024, book.getYear());
         }
 
     }

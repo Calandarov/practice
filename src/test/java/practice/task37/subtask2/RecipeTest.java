@@ -1,7 +1,7 @@
 package practice.task37.subtask2;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class RecipeTest {
     // TODO: привести в нормальный вид
@@ -11,13 +11,13 @@ public class RecipeTest {
         Recipes pizza = new Pizza("Пицца", "Обычный", "Это ингредиенты для пиццы", "Это рецепт пиццы");
         Recipes porridge = new Porridge("Каша", "Обычный", "Это ингредиенты для каши", "Это рецепт каши");
 
-        Assert.assertEquals("Это ингредиенты для салата", salad.showIngredients());
-        Assert.assertEquals("Это рецепт салата", salad.showRecipe());
+        Assertions.assertEquals("Это ингредиенты для салата", salad.showIngredients());
+        Assertions.assertEquals("Это рецепт салата", salad.showRecipe());
 
-        Assert.assertEquals("Это ингредиенты для пиццы", pizza.showIngredients());
-        Assert.assertEquals("Это рецепт пиццы", pizza.showRecipe());
+        Assertions.assertEquals("Это ингредиенты для пиццы", pizza.showIngredients());
+        Assertions.assertEquals("Это рецепт пиццы", pizza.showRecipe());
 
-        Assert.assertEquals("Это ингредиенты для каши", porridge.showIngredients());
-        Assert.assertEquals("Это рецепт каши", porridge.showRecipe());
+        Assertions.assertEquals("Это ингредиенты для каши", porridge.showIngredients());
+        Assertions.assertEquals("Это рецепт каши", porridge.showRecipe());
     }
 }

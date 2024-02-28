@@ -1,18 +1,18 @@
 package practice.task10;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class ConditionalUtilsLeapYearTest {
     @Test
     public void isLeapYear() {
-        Assert.assertTrue(ConditionalUtilsLeapYear.isLeapYear(2000));
-        Assert.assertTrue(ConditionalUtilsLeapYear.isLeapYear(2024));
+        Assertions.assertTrue(ConditionalUtilsLeapYear.isLeapYear(2000));
+        Assertions.assertTrue(ConditionalUtilsLeapYear.isLeapYear(2024));
     }
 
     @Test
     public void isNotLeapYear() {
-        Assert.assertFalse(ConditionalUtilsLeapYear.isLeapYear(1999));
-        Assert.assertFalse(ConditionalUtilsLeapYear.isLeapYear(2023));
+        Assertions.assertFalse(ConditionalUtilsLeapYear.isLeapYear(1999));
+        Assertions.assertFalse(ConditionalUtilsLeapYear.isLeapYear(2023));
     }
 }

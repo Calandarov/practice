@@ -1,7 +1,7 @@
 package practice.task37.subtask1;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class GeomTest {
     // TODO: переделать в нормальный вид
@@ -15,8 +15,8 @@ public class GeomTest {
         String expectedRect = "Нарисован прямоугольник с координатами: (0,1;3,1)";
         String expectedEllipse = "Нарисован эллипс с координатами: (0,1;3,1)";
 
-        Assert.assertEquals(expectedLine, line.draw());
-        Assert.assertEquals(expectedRect, rect.draw());
-        Assert.assertEquals(expectedEllipse, ellipse.draw());
+        Assertions.assertEquals(expectedLine, line.draw());
+        Assertions.assertEquals(expectedRect, rect.draw());
+        Assertions.assertEquals(expectedEllipse, ellipse.draw());
     }
 }

@@ -1,6 +1,7 @@
 package practice.task32.subtask1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class ShopItemTest {
     @Test

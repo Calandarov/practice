@@ -1,7 +1,7 @@
 package practice.task28;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class ArrayUtilsTwoDigitNumbersTest {
     @Test
@@ -18,7 +18,7 @@ public class ArrayUtilsTwoDigitNumbersTest {
             }
         }
 
-        Assert.assertEquals(expectedArrayLength, actualArray.length);
-        Assert.assertTrue(isPositiveTwoDigitNum);
+        Assertions.assertEquals(expectedArrayLength, actualArray.length);
+        Assertions.assertTrue(isPositiveTwoDigitNum);
     }
 }

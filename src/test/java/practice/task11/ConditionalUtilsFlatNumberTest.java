@@ -1,24 +1,24 @@
 package practice.task11;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class ConditionalUtilsFlatNumberTest {
     @Test
     public void isFlatNumber() {
-        Assert.assertTrue(ConditionalUtilsFlatNumber.isFlatNumber(111));
-        Assert.assertTrue(ConditionalUtilsFlatNumber.isFlatNumber(999));
+        Assertions.assertTrue(ConditionalUtilsFlatNumber.isFlatNumber(111));
+        Assertions.assertTrue(ConditionalUtilsFlatNumber.isFlatNumber(999));
     }
 
     @Test
     public void isNotFlatNumber() {
-        Assert.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(110));
-        Assert.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(123));
+        Assertions.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(110));
+        Assertions.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(123));
     }
 
     @Test
     public void numberLengthIsNotEqualThree() {
-        Assert.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(1));
-        Assert.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(1111));
+        Assertions.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(1));
+        Assertions.assertFalse(ConditionalUtilsFlatNumber.isFlatNumber(1111));
     }
 }

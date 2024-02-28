@@ -1,13 +1,13 @@
 package practice.task17;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class StringUtilsSliceWordTest {
     @Test
     public void getSlice() {
-        Assert.assertEquals("Tes", StringUtilsSliceWord.getSlice("Test", 0, 3));
-        Assert.assertEquals("est", StringUtilsSliceWord.getSlice("Test", 1, 4));
-        Assert.assertEquals("Test", StringUtilsSliceWord.getSlice("Test ", 0, 4));
+        Assertions.assertEquals("Tes", StringUtilsSliceWord.getSlice("Test", 0, 3));
+        Assertions.assertEquals("est", StringUtilsSliceWord.getSlice("Test", 1, 4));
+        Assertions.assertEquals("Test", StringUtilsSliceWord.getSlice("Test ", 0, 4));
     }
 }

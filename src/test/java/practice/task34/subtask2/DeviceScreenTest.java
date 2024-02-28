@@ -1,6 +1,7 @@
 package practice.task34.subtask2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class DeviceScreenTest {
     @Test

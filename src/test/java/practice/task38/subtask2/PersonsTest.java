@@ -1,6 +1,7 @@
 package practice.task38.subtask2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class PersonsTest {
     // TODO: переделать

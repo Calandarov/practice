@@ -1,29 +1,43 @@
 package practice.task30.subtask1;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class PersonTest {
+    Person person;
     @Test
     public void correctSet() {
-        Person person = new Person();
+        person = new Person();
         person.setName("qw eаяZ -Я");
         person.setAge(200);
         person.setNumberCategory(5);
         person.setWeight(200);
 
-        Assert.assertEquals("qw eаяZ -Я", person.getName());
-        Assert.assertEquals(200, person.getAge());
-        Assert.assertEquals(5, person.getNumberCategory());
-        Assert.assertEquals(200, person.getWeight());
+        Assertions.assertEquals("qw eаяZ -Я", person.getName());
+        Assertions.assertEquals(200, person.getAge());
+        Assertions.assertEquals(5, person.getNumberCategory());
+        Assertions.assertEquals(200, person.getWeight());
     }
 
-//    @Test
-//    public void incorrectSet() {
-//        Person person = new Person();
-//        person.setName("qw*eаяZ -Я");
-//        person.setAge(201);
-//        person.setNumberCategory(0);
-//        person.setWeight(201);
-//    }
+    @Test
+    public void incorrectSet() throws IllegalArgumentException {
+        person = new Person();
+
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            person.setName("qw*eаяZ -Я");
+        });
+
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            person.setAge(201);
+        });
+
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            person.setNumberCategory(0);
+        });
+
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            person.setWeight(201);
+        });
+    }
 }

@@ -1,15 +1,15 @@
 package practice.task2;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class WordUtilsTest {
     @Test
     public void reverseWords() {
-        Assert.assertEquals("asd zxc", WordUtils.reverseWords("zxc asd"));
-        Assert.assertEquals("qwe asd zxc", WordUtils.reverseWords("zxc asd qwe"));
+        Assertions.assertEquals("asd zxc", WordUtils.reverseWords("zxc asd"));
+        Assertions.assertEquals("qwe asd zxc", WordUtils.reverseWords("zxc asd qwe"));
 
-        Assert.assertEquals("asd", WordUtils.reverseWords("asd"));
-        Assert.assertEquals("", WordUtils.reverseWords(""));
+        Assertions.assertEquals("asd", WordUtils.reverseWords("asd"));
+        Assertions.assertEquals("", WordUtils.reverseWords(""));
     }
 }

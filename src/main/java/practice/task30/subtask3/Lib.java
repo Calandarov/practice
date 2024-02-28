@@ -1,6 +1,8 @@
 package practice.task30.subtask3;
 
 
+import java.util.Arrays;
+
 public class Lib {
     private final int MAX_BOOKS = 5;
     private Book[] lib;
@@ -42,5 +44,9 @@ public class Lib {
         }
 
         lib = newLib;
+    }
+
+    public String printLib() {
+        return Arrays.toString(lib);
     }
 }

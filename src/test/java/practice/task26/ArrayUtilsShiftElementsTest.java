@@ -1,7 +1,7 @@
 package practice.task26;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class ArrayUtilsShiftElementsTest {
     @Test
@@ -10,6 +10,6 @@ public class ArrayUtilsShiftElementsTest {
         int[] actualArray = ArrayUtilsShiftElements.shiftElements(inputArray);
         int[] expectedArray = new int[] {2, 3, 4, 5, 1};
 
-        Assert.assertArrayEquals(expectedArray, actualArray);
+        Assertions.assertArrayEquals(expectedArray, actualArray);
     }
 }

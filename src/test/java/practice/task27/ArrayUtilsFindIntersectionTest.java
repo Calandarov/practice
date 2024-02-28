@@ -1,7 +1,7 @@
 package practice.task27;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class ArrayUtilsFindIntersectionTest {
     @Test
@@ -11,8 +11,8 @@ public class ArrayUtilsFindIntersectionTest {
 
         int[] actualNonEmptyArray = ArrayUtilsFindIntersection.findIntersection(rightArray, leftArray);
         int[] expectedNonEmptyArray = new int[] {4, 7};
-        
-        Assert.assertArrayEquals(expectedNonEmptyArray, actualNonEmptyArray);
+
+        Assertions.assertArrayEquals(expectedNonEmptyArray, actualNonEmptyArray);
     }
 
     @Test
@@ -23,6 +23,6 @@ public class ArrayUtilsFindIntersectionTest {
         int[] actualEmptyArray = ArrayUtilsFindIntersection.findIntersection(rightArray, leftArray);
         int[] expectedEmptyArray = new int[0];
 
-        Assert.assertArrayEquals(expectedEmptyArray, actualEmptyArray);
+        Assertions.assertArrayEquals(expectedEmptyArray, actualEmptyArray);
     }
 }

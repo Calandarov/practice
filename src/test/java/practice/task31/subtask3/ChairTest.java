@@ -1,6 +1,7 @@
 package practice.task31.subtask3;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class ChairTest {
     @Test
