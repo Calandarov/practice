@@ -8,7 +8,7 @@ package practice.task32.subtask1;
 
 public class ShopItem {
     static int amountShopItem = 0;
-    private int id = 0;
+    private int id;
     private String title;
     private int width;
     private int height;
@@ -17,15 +17,13 @@ public class ShopItem {
     private int price;
 
     public ShopItem(String title, int width, int height, int length, int mass, int price) {
+        id = amountShopItem++;
         this.title = title;
         this.width = width;
         this.height = height;
         this.length = length;
         this.mass = mass;
         this.price = price;
-
-        id++;
-        amountShopItem++;
     }
 
     public int getId() {

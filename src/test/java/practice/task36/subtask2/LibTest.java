@@ -27,7 +27,6 @@ public class LibTest {
         Assertions.assertEquals(1, lib.getBooks().size());
     }
 
-    // TODO: переделать
     @Test
     public void printBooks() {
         lib.addBook(book1);
@@ -37,7 +36,6 @@ public class LibTest {
         Assertions.assertEquals(expectedBooks, lib.printBooks());
     }
 
-    // TODO: переделать
     @Test
     public void findBookByAuthor() {
         lib.addBook(book1);
@@ -52,7 +50,6 @@ public class LibTest {
         }
     }
 
-    // TODO: переделать
     @Test
     public void findBookByYear() {
         lib.addBook(book1);

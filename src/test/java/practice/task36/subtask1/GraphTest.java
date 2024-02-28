@@ -4,31 +4,19 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
 public class GraphTest {
-    //TODO: написать тесты
     @Test
-    public void createObject() {
-        Graph graph = new Graph(2, "Graph");
+    public void checkPolymorphism() {
         Graph lineGraph = new LineGraph(2, "lineGraph");
+        lineGraph.setGraphValues(new int[] {0, 1});
+
         Graph chart = new Chart(3, "Chart");
+        chart.setGraphValues(new int[] {0, 1, 2});
+
         Graph bar = new Bar(3, "Bar");
+        bar.setGraphValues(new int[] {3, 4, 5});
 
-        graph.graphValues[0] = 1;
-        graph.graphValues[1] = 2;
-
-        lineGraph.graphValues[0] = 3;
-        lineGraph.graphValues[1] = 4;
-
-        chart.graphValues[0] = 5;
-        chart.graphValues[1] = 6;
-        chart.graphValues[2] = 7;
-
-        bar.graphValues[0] = 8;
-        bar.graphValues[1] = 9;
-        bar.graphValues[2] = 10;
-
-        graph.draw();
-        lineGraph.draw();
-        chart.draw();
-        bar.draw();
+        Assertions.assertEquals("Рисуется график LineGraph со значениями [0, 1]", lineGraph.draw());
+        Assertions.assertEquals("Рисуется график Chart со значениями [0, 1, 2]", chart.draw());
+        Assertions.assertEquals("Рисуется график Bar со значениями [3, 4, 5]", bar.draw());
     }
 }

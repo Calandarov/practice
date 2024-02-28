@@ -27,7 +27,6 @@ public final class Lib {
         return books.remove(book);
     }
 
-    // TODO: должен возвращать список?
     public String printBooks() {
         return books.toString();
     }

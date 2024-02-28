@@ -11,6 +11,14 @@ public class Rect {
     private int x2;
     private int y2;
 
+    static int calculateWidth(Rect rect) {
+        return rect.x1 - rect.x2;
+    }
+
+    static int calculateHeight(Rect rect) {
+        return rect.y1;
+    }
+
     public Rect(int x1, int y1, int x2, int y2) {
         this.x1 = x1;
         this.y1 = y1;
@@ -48,13 +56,5 @@ public class Rect {
 
     public void setY2(int y2) {
         this.y2 = y2;
-    }
-
-    static int calculateWidth(Rect rect) {
-        return rect.x1 - rect.x2;
-    }
-
-    static int calculateHeight(Rect rect) {
-        return rect.y1;
     }
 }

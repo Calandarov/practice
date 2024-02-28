@@ -3,13 +3,13 @@ package practice.task34.subtask1;
 public class Chair extends Furniture {
     private int numberOfLegs;
     private int heightOfLegs;
-    private boolean isChairBack;
+    private boolean chairBack;
 
-    public Chair(String title, int height, int width, int depth, int price, int numberOfLegs, int heightOfLegs, boolean isChairBack) {
+    public Chair(String title, int height, int width, int depth, int price, int numberOfLegs, int heightOfLegs, boolean chairBack) {
         super(title, height, width, depth, price);
         this.numberOfLegs = numberOfLegs;
         this.heightOfLegs = heightOfLegs;
-        this.isChairBack = isChairBack;
+        this.chairBack = chairBack;
     }
 
     public int getNumberOfLegs() {
@@ -28,11 +28,11 @@ public class Chair extends Furniture {
         this.heightOfLegs = heightOfLegs;
     }
 
-    public boolean isChairBack() {
-        return isChairBack;
+    public boolean getChairBack() {
+        return chairBack;
     }
 
     public void setChairBack(boolean chairBack) {
-        isChairBack = chairBack;
+        this.chairBack = chairBack;
     }
 }

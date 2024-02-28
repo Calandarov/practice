@@ -19,7 +19,23 @@ public class Graph {
         this.title = title;
     }
 
-    protected void draw() {
-        System.out.println("Рисуется график Graph со значениями " + Arrays.toString(graphValues));
+    public int[] getGraphValues() {
+        return graphValues;
+    }
+
+    public void setGraphValues(int[] graphValues) {
+        this.graphValues = graphValues;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    protected String draw() {
+        return "Рисуется график Graph со значениями " + Arrays.toString(graphValues);
     }
 }

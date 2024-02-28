@@ -8,7 +8,7 @@ public class Chart extends Graph {
     }
 
     @Override
-    public void draw() {
-        System.out.println("Рисуется график Chart со значениями " + Arrays.toString(graphValues));
+    public String draw() {
+        return "Рисуется график Chart со значениями " + Arrays.toString(graphValues);
     }
 }

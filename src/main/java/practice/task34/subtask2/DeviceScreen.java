@@ -18,4 +18,28 @@ public class DeviceScreen {
         this.font = font;
         this.haveFrame = haveFrame;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getFont() {
+        return font;
+    }
+
+    public void setFont(String font) {
+        this.font = font;
+    }
+
+    public boolean getHaveFrame() {
+        return haveFrame;
+    }
+
+    public void setHaveFrame(boolean haveFrame) {
+        this.haveFrame = haveFrame;
+    }
 }

@@ -8,7 +8,7 @@ public class LineGraph extends Graph {
     }
 
     @Override
-    public void draw() {
-        System.out.println("Рисуется график LineGraph со значениями " + Arrays.toString(graphValues));
+    public String draw() {
+        return "Рисуется график LineGraph со значениями " + Arrays.toString(graphValues);
     }
 }

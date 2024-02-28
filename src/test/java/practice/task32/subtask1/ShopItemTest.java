@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Assertions;
 
 public class ShopItemTest {
     @Test
-    public void createObject() {
+    public void checkIsUniqueId() {
         ShopItem shopItem1 = new ShopItem("ShopItem1", 1, 2, 3, 4, 5);
         ShopItem shopItem2 = new ShopItem("ShopItem2", 6, 7, 8, 9, 10);
 
-        System.out.println(ShopItem.amountShopItem);
+        Assertions.assertNotEquals(shopItem1.getId(), shopItem2.getId());
     }
 }

@@ -8,11 +8,11 @@ public class RectTest {
 
     @Test
     public void calculateWidth() {
-        System.out.println(Rect.calculateWidth(rect));
+        Assertions.assertEquals(3, Rect.calculateWidth(rect));
     }
 
     @Test
     public void calculateHeight() {
-        System.out.println(Rect.calculateHeight(rect));
+        Assertions.assertEquals(5, Rect.calculateHeight(rect));
     }
 }

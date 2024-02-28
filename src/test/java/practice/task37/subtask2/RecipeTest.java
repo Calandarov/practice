@@ -4,9 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
 public class RecipeTest {
-    // TODO: привести в нормальный вид
     @Test
-    public void createObjects() {
+    public void callingOverrideMethods() {
         Recipes salad = new Salad("Салат", "Обычный", "Это ингредиенты для салата", "Это рецепт салата");
         Recipes pizza = new Pizza("Пицца", "Обычный", "Это ингредиенты для пиццы", "Это рецепт пиццы");
         Recipes porridge = new Porridge("Каша", "Обычный", "Это ингредиенты для каши", "Это рецепт каши");

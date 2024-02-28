@@ -8,7 +8,7 @@ public class Bar extends Graph {
     }
 
     @Override
-    public void draw() {
-        System.out.println("Рисуется график Bar со значениями " + Arrays.toString(graphValues));
+    public String draw() {
+        return "Рисуется график Bar со значениями " + Arrays.toString(graphValues);
     }
 }

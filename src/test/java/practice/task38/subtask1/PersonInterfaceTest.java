@@ -4,9 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
 public class PersonInterfaceTest {
-    // TODO: переделать
     @Test
-    public void createObject() {
+    public void getChildObjectsData() {
         PersonInterface job = new Jobs("jobFIO",
                 "jobStatus",
                 2000,
@@ -22,19 +21,19 @@ public class PersonInterfaceTest {
         PersonInterface superviser = new Supervisers("superviserFIO",
                 "superviserStatus",
                 2010,
-                "superviserPhoneNubmer",
+                "superviserPhoneNumber",
                 "superviserAddress");
 
-        System.out.println(job.getFIO());
-        System.out.println(job.getStatus());
-        System.out.println(job.getInfo());
+        Assertions.assertEquals("jobFIO", job.getFIO());
+        Assertions.assertEquals("jobStatus", job.getStatus());
+        Assertions.assertEquals("2000, jobPhoneNumber, jobAddress", job.getInfo());
 
-        System.out.println(client.getFIO());
-        System.out.println(client.getStatus());
-        System.out.println(client.getInfo());
+        Assertions.assertEquals("clientsFIO", client.getFIO());
+        Assertions.assertEquals("clientStatus", client.getStatus());
+        Assertions.assertEquals("2005, clientPhoneNumber, clientAddress", client.getInfo());
 
-        System.out.println(superviser.getFIO());
-        System.out.println(superviser.getStatus());
-        System.out.println(superviser.getInfo());
+        Assertions.assertEquals("superviserFIO", superviser.getFIO());
+        Assertions.assertEquals("superviserStatus", superviser.getStatus());
+        Assertions.assertEquals("2010, superviserPhoneNumber, superviserAddress", superviser.getInfo());
     }
 }

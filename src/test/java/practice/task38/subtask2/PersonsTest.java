@@ -4,9 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
 public class PersonsTest {
-    // TODO: переделать
     @Test
-    public void createObjects() {
+    public void getChildObjectsDataAndCounter() {
         PersonInterface job = new Jobs("jobFIO",
                 2000,
                 "jobAddress",
@@ -25,11 +24,19 @@ public class PersonsTest {
                 "superviserStatus",
                 "superviserPhoneNumber");
 
-        System.out.println(job.getFIO());
-        System.out.println(client.getFIO());
-        System.out.println(superviser.getFIO());
+        Assertions.assertEquals("jobFIO", job.getFIO());
+        Assertions.assertEquals("jobStatus", job.getStatus());
+        Assertions.assertEquals("2000, jobPhoneNumber, jobAddress", job.getInfo());
 
-        System.out.println(Persons.count);
-        System.out.println(Persons.count_clients);
+        Assertions.assertEquals("clientFIO", client.getFIO());
+        Assertions.assertEquals("clientStatus", client.getStatus());
+        Assertions.assertEquals("2005, clientPhoneNumber, clientAddress", client.getInfo());
+
+        Assertions.assertEquals("superviserFIO", superviser.getFIO());
+        Assertions.assertEquals("superviserStatus", superviser.getStatus());
+        Assertions.assertEquals("2010, superviserPhoneNumber, superviserAddress", superviser.getInfo());
+
+        Assertions.assertEquals(2, Persons.count);
+        Assertions.assertEquals(1, Persons.count_clients);
     }
 }

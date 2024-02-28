@@ -1,28 +1,40 @@
 package practice.task35;
 
+
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
 import java.util.ArrayList;
 
 public class StationeryTest {
-    @Test
-    public void subtask1() {
-        Notebook notebook = new Notebook(1000, true, 1, 14);
-        Pen pen = new Pen(150, true, 2, "Blue");
-        Pencil pencil = new Pencil(100, true, 3, false);
+    Notebook notebook;
+    Pen pen;
+    Pencil pencil;
 
-        System.out.println(notebook.displayNotebook());
-        System.out.println(pen.displayPen());
-        System.out.println(pencil.displayPencil());
+    @DisplayName("subtask1")
+    @Test
+    public void getChildObjectsData() {
+        notebook = new Notebook(1000, true, 1, 14);
+        pen = new Pen(150, true, 2, "Blue");
+        pencil = new Pencil(100, true, 3, false);
+
+        Assertions.assertEquals("Notebook{screenSize=14, price=1000, stockAvailability=true, id=1}", notebook.displayNotebook());
+        Assertions.assertEquals("Pen{color='Blue', price=150, stockAvailability=true, id=2}", pen.displayPen());
+        Assertions.assertEquals("Pencil{haveEraser=false, price=100, stockAvailability=true, id=3}", pencil.displayPencil());
     }
 
+    @DisplayName("subtask2")
     @Test
-    public void subtask2() {
+    public void getChildObjectsDataFromArrayList() {
+        notebook = new Notebook(1000, true, 4, 14);
+        pen = new Pen(150, true, 5, "Blue");
+        pencil = new Pencil(100, true, 6, false);
+
         ArrayList<Object> list = new ArrayList<>();
-        list.add(new Notebook(1000, true, 4, 14));
-        list.add(new Pen(150, true, 5, "Blue"));
-        list.add(new Pencil(100, true, 6, false));
+        list.add(notebook);
+        list.add(pen);
+        list.add(pencil);
 
         for(Object item : list) {
             if(item instanceof Notebook) {
