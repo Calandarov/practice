@@ -1,6 +1,7 @@
 package practice.task39.subtask1;
 
 public class DataGraph {
+    // TODO: посмотреть еще
     public final int N = 10;
     public double[] data;
 
