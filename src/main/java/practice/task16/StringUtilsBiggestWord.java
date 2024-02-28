@@ -6,7 +6,7 @@ package practice.task16;
 public class StringUtilsBiggestWord {
     private StringUtilsBiggestWord() {}
 
-    public static String getLargest(String input) {
+    public static String getBiggestWord(String input) {
         String[] str = input.split(" ");
         String biggestWord = null;
         int strLength = 0;

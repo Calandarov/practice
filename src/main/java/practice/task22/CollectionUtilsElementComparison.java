@@ -3,13 +3,13 @@
 */
 package practice.task22;
 
-import java.util.HashSet;
 import java.util.List;
+import java.util.ArrayList;
 
 public class CollectionUtilsElementComparison {
     private CollectionUtilsElementComparison() {}
 
-    public static boolean isValuesMatch(List<?> leftList, List<?> rightList) {
-        return new HashSet<>(leftList).equals(new HashSet<>(rightList));
+    public static boolean compareElements(List<?> leftList, List<?> rightList) {
+        return new ArrayList<>(leftList).equals(new ArrayList<>(rightList));
     }
 }

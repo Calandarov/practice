@@ -3,7 +3,6 @@ package practice.task21;
 
 import org.junit.Assert;
 import org.junit.Test;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,6 +17,6 @@ public class CollectionUtilsCountTest {
         expectedMap.put("3", 1);
         expectedMap.put("4", 1);
 
-        Assert.assertEquals(actualMap, expectedMap);
+        Assert.assertEquals(expectedMap, actualMap);
     }
 }

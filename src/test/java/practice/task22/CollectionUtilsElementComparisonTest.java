@@ -7,9 +7,14 @@ import java.util.List;
 
 public class CollectionUtilsElementComparisonTest {
     @Test
-    public void isValuesMatch() {
-        Assert.assertFalse(CollectionUtilsElementComparison.isValuesMatch(List.of(1, 2, 3), List.of(4, 5, 6)));
+    public void compareIdenticalList() {
+        Assert.assertTrue(CollectionUtilsElementComparison.compareElements(List.of(1, 2, 3), List.of(1, 2, 3)));
+        Assert.assertTrue(CollectionUtilsElementComparison.compareElements(List.of("str1", "str2", "str3"), List.of("str1", "str2", "str3")));
+    }
 
-        Assert.assertTrue(CollectionUtilsElementComparison.isValuesMatch(List.of(7, 8, 9), List.of(7, 8, 8, 9)));
+    @Test
+    public void compareDifferentList() {
+        Assert.assertFalse(CollectionUtilsElementComparison.compareElements(List.of(1, 2, 3), List.of(4, 5, 6)));
+        Assert.assertFalse(CollectionUtilsElementComparison.compareElements(List.of("str1", "str1", "str3"), List.of("str1", "str2", "str3")));
     }
 }

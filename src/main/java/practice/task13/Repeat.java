@@ -10,9 +10,11 @@ package practice.task13;
 public class Repeat {
     private Repeat() {}
 
-    public static int[] generateArrWithFibonachi(int length) {
+    public static int[] generateArr(int length) {
         if(length <= 0) {
             return new int[0];
+        } else if(length == 1) {
+            return new int[] {1};
         }
 
         int[] fibonacciNumbers = new int[length];

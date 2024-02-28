@@ -6,9 +6,8 @@ import org.junit.Test;
 public class StringUtilsBiggestWordTest {
     @Test
     public void getLargest() {
-        Assert.assertEquals("большое", StringUtilsBiggestWord.getLargest("самое большое слово"));
-        Assert.assertEquals("словооо", StringUtilsBiggestWord.getLargest("самое большое словооо"));
-        Assert.assertEquals("самоееее", StringUtilsBiggestWord.getLargest("самоееее большое словооо"));
+        Assert.assertEquals("большое", StringUtilsBiggestWord.getBiggestWord("самое большое слово"));
+        Assert.assertEquals("словооо", StringUtilsBiggestWord.getBiggestWord("самое большое словооо"));
+        Assert.assertEquals("самоееее", StringUtilsBiggestWord.getBiggestWord("самоееее большое словооо"));
     }
-
 }

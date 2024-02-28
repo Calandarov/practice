@@ -11,8 +11,8 @@ public class ArrayUtilsTwoDigitNumbersTest {
         int expectedArrayLength = inputArray.length;
         boolean isPositiveTwoDigitNum = true;
 
-        for(int i : actualArray) {
-            if (i < 10 || i > 99) {
+        for(int item : actualArray) {
+            if (item < 10 || item > 99) {
                 isPositiveTwoDigitNum = false;
                 break;
             }

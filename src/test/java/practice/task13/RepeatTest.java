@@ -5,9 +5,15 @@ import org.junit.Test;
 
 public class RepeatTest {
     @Test
-    public void generateArrWithFibonachi() {
-        Assert.assertArrayEquals(new int[] {1, 2, 3}, Repeat.generateArrWithFibonachi(3));
-        Assert.assertArrayEquals(new int[] {1, 2, 3, 5}, Repeat.generateArrWithFibonachi(4));
-        Assert.assertArrayEquals(new int[] {1, 2, 3, 5, 8, 13, 21, 34, 55}, Repeat.generateArrWithFibonachi(9));
+    public void lengthIsGreaterZero() {
+        Assert.assertArrayEquals(new int[] {1}, Repeat.generateArr(1));
+        Assert.assertArrayEquals(new int[] {1, 2}, Repeat.generateArr(2));
+        Assert.assertArrayEquals(new int[] {1, 2, 3, 5, 8, 13, 21, 34, 55}, Repeat.generateArr(9));
+    }
+
+    @Test
+    public void lengthIsLessOrEqualZero() {
+        Assert.assertArrayEquals(new int[0], Repeat.generateArr(-1));
+        Assert.assertArrayEquals(new int[0], Repeat.generateArr(0));
     }
 }
