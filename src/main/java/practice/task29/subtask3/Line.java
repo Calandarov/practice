@@ -5,7 +5,7 @@
 package practice.task29.subtask3;
 
 public class Line {
-    // TODO: как определить пересечение двух линий?
+    // TODO: частично сделано, как определить пересечение двух линий?
     private int startPointX;
     private int startPointY;
     private int endPointX;

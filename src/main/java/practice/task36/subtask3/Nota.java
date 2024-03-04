@@ -8,7 +8,7 @@
 package practice.task36.subtask3;
 
 public class Nota {
-    // TODO: посмотреть еще, не понял условие
+    // TODO: не сделано
 //    private final String id;
 //    private final String title;
 //    private final int duration;

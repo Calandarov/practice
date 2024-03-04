@@ -26,7 +26,7 @@ public class Rect {
         this.botRightCornerY = botRightCornerY;
     }
 
-    // TODO: как создать третий конструктор?
+    // TODO: частично сделано, как создать третий конструктор?
 //    public Rect(int topLeftCornerX, int topLeftCornerY, int width, int height) {
 //        this.topLeftCornerX = topLeftCornerX;
 //        this.topLeftCornerY = topLeftCornerY;

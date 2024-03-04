@@ -9,5 +9,5 @@
 package practice.task30.subtask2;
 
 public class Vec2 {
-    // TODO: посмотреть еще, не понял условие
+    // TODO: не сделано
 }
