@@ -1,5 +1,6 @@
 package practice.task36.subtask3;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class NotaTest {
@@ -13,12 +14,12 @@ public class NotaTest {
         Si si = new Si("Si", "Si", 6, true, false);
         Do notaDo = new Do("Do", "Do", 2, true, true);
 
-        System.out.println(re.getId());
-        System.out.println(mi.getTitle());
-        System.out.println(fa.getDuration());
-        System.out.println(sol.isHaveSharp());
-        System.out.println(la.isHaveFlat());
-        System.out.println(si.getId());
-        System.out.println(notaDo.getDuration());
+        Assertions.assertEquals("Re", re.getId());
+        Assertions.assertEquals("Mi", mi.getTitle());
+        Assertions.assertEquals(3, fa.getDuration());
+        Assertions.assertTrue(sol.getSharp());
+        Assertions.assertFalse(la.getFlat());
+        Assertions.assertEquals("Si", si.getId());
+        Assertions.assertEquals(2, notaDo.getDuration());
     }
 }

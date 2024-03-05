@@ -11,15 +11,15 @@ public class Nota {
     private String id;
     private String title;
     private int duration;
-    private boolean isHaveSharp;
-    private boolean isHaveFlat;
+    private boolean sharp;
+    private boolean flat;
 
-    public Nota(String id, String title, int duration, boolean isHaveSharp, boolean isHaveFlat) {
+    public Nota(String id, String title, int duration, boolean sharp, boolean flat) {
         this.id = id;
         this.title = title;
         this.duration = duration;
-        this.isHaveSharp = isHaveSharp;
-        this.isHaveFlat = isHaveFlat;
+        this.sharp = sharp;
+        this.flat = flat;
     }
 
     public final String getId() {
@@ -46,19 +46,19 @@ public class Nota {
         this.duration = duration;
     }
 
-    public final boolean isHaveSharp() {
-        return isHaveSharp;
+    public final boolean getSharp() {
+        return sharp;
     }
 
-    public final void setHaveSharp(boolean isHaveSharp) {
-        this.isHaveSharp = isHaveSharp;
+    public final void setSharp(boolean sharp) {
+        this.sharp = sharp;
     }
 
-    public final boolean isHaveFlat() {
-        return isHaveFlat;
+    public final boolean getFlat() {
+        return flat;
     }
 
-    public final void setHaveFlat(boolean isHaveFlat) {
-        this.isHaveFlat = isHaveFlat;
+    public final void setFlat(boolean flat) {
+        this.flat = flat;
     }
 }
