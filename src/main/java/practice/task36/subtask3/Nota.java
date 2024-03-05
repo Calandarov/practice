@@ -8,58 +8,57 @@
 package practice.task36.subtask3;
 
 public class Nota {
-    // TODO: не сделано
-//    private final String id;
-//    private final String title;
-//    private final int duration;
-//    private final boolean isHaveSharp;
-//    private final boolean isHaveFlat;
-//
-//    public Nota(String id, String title, int duration, boolean isHaveSharp, boolean isHaveFlat) {
-//        this.id = id;
-//        this.title = title;
-//        this.duration = duration;
-//        this.isHaveSharp = isHaveSharp;
-//        this.isHaveFlat = isHaveFlat;
-//    }
-//
-//    public final String getId() {
-//        return id;
-//    }
-//
-//    public final void setId(String id) {
-//        this.id = id;
-//    }
-//
-//    public final String getTitle() {
-//        return title;
-//    }
-//
-//    public final void setTitle(String title) {
-//        this.title = title;
-//    }
-//
-//    public final int getDuration() {
-//        return duration;
-//    }
-//
-//    public final void setDuration(int duration) {
-//        this.duration = duration;
-//    }
-//
-//    public final boolean isHaveSharp() {
-//        return isHaveSharp;
-//    }
-//
-//    public final void setHaveSharp(boolean isHaveSharp) {
-//        this.isHaveSharp = isHaveSharp;
-//    }
-//
-//    public final boolean isHaveFlat() {
-//        return isHaveFlat;
-//    }
-//
-//    public final void setHaveFlat(boolean isHaveFlat) {
-//        this.isHaveFlat = isHaveFlat;
-//    }
+    private String id;
+    private String title;
+    private int duration;
+    private boolean isHaveSharp;
+    private boolean isHaveFlat;
+
+    public Nota(String id, String title, int duration, boolean isHaveSharp, boolean isHaveFlat) {
+        this.id = id;
+        this.title = title;
+        this.duration = duration;
+        this.isHaveSharp = isHaveSharp;
+        this.isHaveFlat = isHaveFlat;
+    }
+
+    public final String getId() {
+        return id;
+    }
+
+    public final void setId(String id) {
+        this.id = id;
+    }
+
+    public final String getTitle() {
+        return title;
+    }
+
+    public final void setTitle(String title) {
+        this.title = title;
+    }
+
+    public final int getDuration() {
+        return duration;
+    }
+
+    public final void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public final boolean isHaveSharp() {
+        return isHaveSharp;
+    }
+
+    public final void setHaveSharp(boolean isHaveSharp) {
+        this.isHaveSharp = isHaveSharp;
+    }
+
+    public final boolean isHaveFlat() {
+        return isHaveFlat;
+    }
+
+    public final void setHaveFlat(boolean isHaveFlat) {
+        this.isHaveFlat = isHaveFlat;
+    }
 }
