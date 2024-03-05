@@ -6,47 +6,47 @@ package practice.task29.subtask3;
 
 public class Line {
     // TODO: частично сделано, как определить пересечение двух линий?
-    private int startPointX;
-    private int startPointY;
-    private int endPointX;
-    private int endPointY;
+    private int x1;
+    private int y1;
+    private int x2;
+    private int y2;
 
-    public Line(int startPointX, int startPointY, int endPointX, int endPointY) {
-        this.startPointX = startPointX;
-        this.startPointY = startPointY;
-        this.endPointX = endPointX;
-        this.endPointY = endPointY;
+    public Line(int x1, int y1, int x2, int y2) {
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
     }
 
-    public int getStartPointX() {
-        return startPointX;
+    public int getX1() {
+        return x1;
     }
 
-    public void setStartPointX(int startPointX) {
-        this.startPointX = startPointX;
+    public void setX1(int x1) {
+        this.x1 = x1;
     }
 
-    public int getStartPointY() {
-        return startPointY;
+    public int getY1() {
+        return y1;
     }
 
-    public void setStartPointY(int startPointY) {
-        this.startPointY = startPointY;
+    public void setY1(int y1) {
+        this.y1 = y1;
     }
 
-    public int getEndPointX() {
-        return endPointX;
+    public int getX2() {
+        return x2;
     }
 
-    public void setEndPointX(int endPointX) {
-        this.endPointX = endPointX;
+    public void setX2(int x2) {
+        this.x2 = x2;
     }
 
-    public int getEndPointY() {
-        return endPointY;
+    public int getY2() {
+        return y2;
     }
 
-    public void setEndPointY(int endPointY) {
-        this.endPointY = endPointY;
+    public void setY2(int y2) {
+        this.y2 = y2;
     }
 }
