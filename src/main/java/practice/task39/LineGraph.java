@@ -5,15 +5,15 @@ import java.util.Arrays;
 public class LineGraph implements Observer {
     DataGraph dg;
 
-    public LineGraph(DataGraph dg) {
-        this.dg = dg;
+    public LineGraph() {
+        dg = DataGraph.getInstance();
     }
 
-    public void draw() {
-        System.out.println(Arrays.toString(dg.getData()));
+    public void draw(double[] data) {
+        System.out.println(Arrays.toString(data));
     }
 
     public void update() {
-        draw();
+        draw(dg.getData());
     }
 }

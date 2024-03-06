@@ -1,11 +1,11 @@
 package practice.task39;
 
 public class DataGraph {
-    // TODO: не сделано
+    // TODO: доделать задание
+    public static Observer[] graphs = new Observer[3];
     private static DataGraph INSTANCE;
     private final int N = 10;
     private double[] data = new double[N];
-    private Observer[] graphs;
 
     private DataGraph() {}
 
@@ -23,18 +23,6 @@ public class DataGraph {
 
     public double[] getData() {
         return data;
-    }
-
-    public void setData(double[] data) {
-        this.data = data;
-    }
-
-    public Observer[] getGraphs() {
-        return graphs;
-    }
-
-    public void setGraphs(Observer[] graphs) {
-        this.graphs = graphs;
     }
 
     public void updateDataGraphs() {
