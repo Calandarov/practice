@@ -9,8 +9,6 @@ public class DataGraphTest {
         DataGraph.graphs[1] = new ChartGraph();
         DataGraph.graphs[2] = new LineGraph();
 
-//        for(Observer graph : DataGraph.graphs) {
-//            graph.draw();
-//        }
+        DataGraph.getInstance().updateDataGraphs();
     }
 }
